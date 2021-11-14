@@ -108,6 +108,7 @@ public class QTBot extends Base {
         pageObjectManager=new PageObjectManager(wd);
         wd.get("http://54.80.137.197:5000/");
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS) ;
+        wd.manage().window().maximize();
     }
     @Test
     public void enterTheDoor() throws InterruptedException, AWTException {
